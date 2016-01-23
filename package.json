@@ -1,0 +1,19 @@
+{
+  "name": "energy-general",
+  "version": "1.0.0",
+  "description": "Energy General LLC is a company made up of energy consultants that help save people money on their building's energy bills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pstrum/energy-general.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pstrum/energy-general/issues"
+  },
+  "homepage": "https://github.com/pstrum/energy-general#readme"
+}
