@@ -2,9 +2,9 @@
   "name": "energy-general",
   "version": "1.0.0",
   "description": "Energy General LLC is a company made up of energy consultants that help save people money on their building's energy bills.",
-  "main": "index.js",
+  "main": "entry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/pstrum/energy-general/issues"
   },
-  "homepage": "https://github.com/pstrum/energy-general#readme"
+  "homepage": "https://github.com/pstrum/energy-general#readme",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-live-server": "0.0.29",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "node-sass": "^3.4.2",
+    "require-dir": "^0.3.0",
+    "webpack": "^1.12.12",
+    "webpack-stream": "^3.1.0"
+  }
 }
