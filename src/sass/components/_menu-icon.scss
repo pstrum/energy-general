@@ -1,0 +1,13 @@
+.menu-icon {
+  color: color(primary);
+  transform: translateY(-1px) scale(1);
+  transition: .3s color;
+  .menu-icon-top {
+    @extend %menu-icons;
+    transform: rotate(45deg);
+  }
+  .menu-icon-bottom {
+    @extend %menu-icons;
+    transform: translate(0px, 12px) rotate(-45deg);
+  }
+}

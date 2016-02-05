@@ -18,65 +18,92 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <header>
-      <h1>Energy General</h1>
+    <header class="menu">
+      <div class="menu-slide">
+        <h1>Energy<br>General<br>Consultants</h1>
+        <nav class="menu-nav">
+          <ul>
+            <li>
+              <a href="/how">How it works</a>
+            </li>
+            <li>
+              <a href="/about">About us</a>
+            </li>
+            <li>
+              <a href="/clients">Clients</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <button type="button" aria-controls="menu" aria-label="menu">
         <span class="menu-icon" aria-hidden="true">
           <span class="menu-icon-top"></span>
           <span class="menu-icon-bottom"></span>
         </span>
       </button>
-      <nav class="menu-nav">
-        <ul>
-          <li>
-            <a href="/how">How it works</a>
-          </li>
-          <li>
-            <a href="/about">About us</a>
-          </li>
-          <li>
-            <a href="/clients">Clients</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-        </ul>
-      </nav>
+      <a class="menu-logo" href="/">
+        <img src="/images/eg-logo.svg" alt="enrgy.io" width="100" title="Energy Generall LLC Logo">
+      </a>
     </header>
     <main>
-      <section>
+      <section class="home-hero">
         <h2>Cut your energy costs</h2>
         <p>We can save you thousands of dollars in energy costs.</p>
-        <h3>Any building. Anytime. Anywhere.</h3>
+        <form action="" method="post">
+          <input type="email" name="email" placeholder="Email">
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+      <section>
+        <h2>Any building, anytime, anywhere</h2>
+        <p>We work quickly and seamlessly to get you the grants and rebates the government owes you.</p>
         <ul>
           <li>
             <figure>
-              <img src="/images/office-building.jpg" alt="Office Building" title="An office building">
-              <figcaption>Saved $30,000 per year</figcaption>
+              <img src="/images/office-building.jpg" alt="Stand-alone home" title="A house">
+              <figcaption>
+                <p>$9K Per Year</p>
+                <p>Stand alone house</p>
+              </figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/images/university1.jpg" alt="University Building" title="A University Building">
-              <figcaption>Saved 40,000 Gallons of Oil</figcaption>
+              <img src="/images/office-building.jpg" alt="University Campus" title="A University Building">
+              <figcaption>
+                <p>$9K Per Year</p>
+                <p>University Buildings</p>
+              </figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/images/university2.jpg" alt="Florida Gulf Coast University" title="A Florida Gulf Coast University Building">
-              <figcaption>Reduced kWh's by 22%</figcaption>
+              <img src="/images/university1.jpg" alt="Office Building" title="An Office Building">
+              <figcaption>
+                <p>$300K Per Year</p>
+                <p>Office Buildings</p>
+              </figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/images/apartment-building.jpg" alt="Apartment Building" title="An apartment building">
-              <figcaption>Saved 4 MT CO2 per year</figcaption>
+              <img src="/images/university2.jpg" alt="Apartment Building" title="An apartment building">
+              <figcaption>
+                <p>$600K Per Year</p>
+                <p>Apartment Buildings</p>
+              </figcaption>
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/images/university3.jpg" alt="University Building" title="A University Building">
-              <figcaption>Saved $10,000 per year</figcaption>
+              <img src="/images/apartment-building.jpg" alt="A storefront" title="A storefront">
+              <figcaption>
+                <p>$600K Per Year</p>
+                <p>Storefront</p>
+              </figcaption>
             </figure>
           </li>
         </ul>
