@@ -1,3 +1,5 @@
-p {
-  color: blue;
+body {
+  font-family: $primary;
+  color: color(primary);
+  background: color(base);
 }

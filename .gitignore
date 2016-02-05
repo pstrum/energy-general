@@ -29,8 +29,8 @@ node_modules
 # Compiled Public Directory
 build
 
-# Strategy Directory
-strategy
+# Wireframes
+wireframes
 
 # Mac OS X artifact
 .DS_Store

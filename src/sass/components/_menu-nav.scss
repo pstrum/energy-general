@@ -1,0 +1,10 @@
+.menu-nav {
+  padding: $base-line-height;
+  a {
+    display: block;
+    padding: type-scale(-1) type-scale(-1) $base-line-height / 2;
+    font-size: type-scale(1);
+    line-height: line-height(1);
+    color: color(primary);
+  }
+}
