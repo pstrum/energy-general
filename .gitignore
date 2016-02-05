@@ -30,6 +30,7 @@ node_modules
 build
 
 # Wireframes
+wireframes
 
 # Mac OS X artifact
 .DS_Store
