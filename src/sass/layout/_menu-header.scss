@@ -3,6 +3,11 @@
   min-height: line-height(4); 
   text-align: center;
   overflow: visible;
+  h1 {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
   button {
     position: absolute;
     left: 0;
@@ -18,8 +23,8 @@
   }
   .menu-icon {
     display: inline-block;
-    height: type-scale(1);
-    width: type-scale(1);
+    height: type-scale(0);
+    width: type-scale(0);
   }
   .menu-slide {
     display: flex;
@@ -39,12 +44,6 @@
     z-index: 1;
     transform: translateX(-100%);
     transition: transform 0.15s ease-in;
-    h1 {
-      order: 2;
-    }
-    .menu-nav {
-      order: 1;
-    }
     li {
       display: flex;
       flex-direction: column;
@@ -61,7 +60,7 @@
   }
   .menu-open {
     .menu-icon-top {
-      transform: translate(0px, 12px) rotate(225deg);
+      transform: translate(0px, 9px) rotate(225deg);
     }
     .menu-icon-bottom {
       transform: translate(0) rotate(135deg);

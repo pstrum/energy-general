@@ -45,12 +45,13 @@ $line-height: (
   4: $base-line-height * 3
 );
 
-$primary: 'Josefin Sans', sans-serif;
+$primary: 'Lato', sans-serif;
 
 $weight: (
   lighter: 100,
   light: 300,
   regular: 400,
   semibold: 600,
-  bold: 700
+  bold: 700,
+  heavy: 900
 );

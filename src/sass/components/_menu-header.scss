@@ -1,8 +1,14 @@
 .menu {
   text-transform: uppercase;
   h1 {
-    padding: $base-line-height;
+    padding: 18px 15px;
     text-align: left;
-    font-size: type-scale(1);
+    font-size: type-scale(-1);
+    font-weight: weight(bold);
+    line-height: 1;
+    &:first-line {
+      font-size: 14px;
+      font-weight: weight(heavy);
+    }
   }
 }

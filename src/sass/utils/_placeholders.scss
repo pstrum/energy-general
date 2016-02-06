@@ -4,9 +4,9 @@
   top: 0;
   right: 0;
   left: 0;
-  height: 5.5px;
+  height: 4px;
   background-color: color(primary);
-  border-radius: $base-line-height * 2;
+  border-radius: 2px;
   transition: .35s transform;
   will-change: transform;
 }

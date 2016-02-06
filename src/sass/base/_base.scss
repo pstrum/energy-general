@@ -3,3 +3,7 @@ body {
   color: color(primary);
   background: color(base);
 }
+
+input {
+  font-size: type-scale(0);
+}
