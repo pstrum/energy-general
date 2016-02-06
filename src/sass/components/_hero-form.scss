@@ -1,0 +1,31 @@
+.home-hero {
+  input[type="email"] {
+    display: block;
+    margin: 0 auto;
+    max-width: $base-line-height * 24;
+    width: 100%;
+    padding: $base-line-height / 2;
+    font-size: type-scale(0);
+    color: color(primary);
+    text-align: center;
+    background-color: color(base, base);
+    border: none;
+    border-radius: $base-line-height / 4;
+  }
+  button {
+    padding: type-scale(-1) $base-line-height;
+    font-family: $primary;
+    font-size: type-scale(0);
+    line-height: line-height(0); 
+    color: color(base, base);
+    text-transform: uppercase;
+    background-color: color(secondary);
+    border: none;
+    border-radius: $base-line-height / 4;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    &:hover {
+      background-color: color(tertiary);
+    }
+  }
+}

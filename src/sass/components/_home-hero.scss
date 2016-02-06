@@ -1,5 +1,15 @@
 .home-hero {
+  padding: type-scale(2) $base-line-height;
+  color: color(base, base);
+  text-transform: uppercase;
   background-image: url("/images/home-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  h2 {
+    font-size: type-scale(1);
+    font-weight: weight(semibold);
+  }
+  p {
+  
+  }
 }
