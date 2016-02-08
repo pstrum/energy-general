@@ -1,0 +1,19 @@
+.home-about {
+  color: color(base);
+  background-color: color(secondary);
+  h2 {
+    font-weight: weight(regular);
+    font-size: type-scale(0);
+    text-transform: uppercase;
+  }
+  svg {
+    fill: color(base);
+  }
+  p {
+    font-family: $secondary;
+    font-size: type-scale(1);
+  }
+  .button {
+    @include button-links;
+  }
+}

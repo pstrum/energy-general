@@ -2,3 +2,12 @@
   font-size: type-scale($ratio);
   line-height: line-height($ratio);
 }
+
+@mixin button-links($font-color: color(base), $border-color: color(base)) {
+  padding: $base-line-height / 2 $base-line-height;
+  color: $font-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $border-color;
+  border-radius: $base-line-height / 3;
+}
