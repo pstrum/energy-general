@@ -11,3 +11,6 @@
   will-change: transform;
 }
 
+%home-section-padding {
+  padding: type-scale(2) $base-line-height type-scale(3);
+}
