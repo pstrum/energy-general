@@ -1,7 +1,7 @@
 .home-about {
+  @extend %home-section-padding;
   display: flex;
   flex-direction: column;
-  padding: type-scale(2) $base-line-height type-scale(3);
   align-items: center;
   text-align: center;
   svg {

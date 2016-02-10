@@ -1,0 +1,45 @@
+.our-buildings {
+  padding: type-scale(2) $base-line-height / 2 type-scale(3);
+  text-align: center;
+  svg {
+    width: 48px;
+    height: 48px;
+  }
+  figure {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  li {
+    display: inline-block;
+    flex-basis: 50%;
+    padding: $base-line-height $base-line-height / 2;
+  }
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: type-scale(1);
+    padding-top: $base-line-height;
+  }
+  h3 {
+    margin-top: type-scale(0);
+  }
+  p {
+    vertical-align: middle;
+  }
+}
