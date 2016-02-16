@@ -5,11 +5,14 @@
   }
   figcaption {
     font-size: type-scale(2);
-    font-weight: weight(bold);
+    font-weight: weight(light);
     color: color(base);
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
+    p:first-line {
+      font-weight: weight(bold);
+    }
   }
   h2 {
     font-weight: weight(semibold);

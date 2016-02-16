@@ -1,0 +1,18 @@
+.home-blog {
+  background-image: url('/images/blog-earth.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-weight: weight(light);
+    text-transform: uppercase;
+    color: color(tertiary, alt);
+  }
+  p {
+    @extend %home-section-paragraphs;
+    color: color(base);
+  }
+  a {
+    @include button-links($border-color: transparent, $background-color: color(tertiary));
+    display: inline-block;
+  }
+}
