@@ -14,3 +14,9 @@
 %home-section-padding {
   padding: type-scale(2) $base-line-height type-scale(3);
 }
+
+%home-section-paragraphs {
+  font-family: $secondary;
+  font-size: type-scale(1);
+  line-height: $base-line-height * 1.5;
+}

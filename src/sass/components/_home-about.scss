@@ -10,8 +10,7 @@
     fill: color(base);
   }
   p {
-    font-family: $secondary;
-    font-size: type-scale(1);
+    @extend %home-section-paragraphs;
   }
   .button {
     @include button-links;
