@@ -1,13 +1,13 @@
-.home-blog {
+.home-feature {
   @extend %home-section-padding;
   text-align: center;
   h2 {
     text-align: left;
   }
   p {
-    margin-top: type-scale(1);
+    margin-top: type-scale(3);
   }
   a {
-    margin-top: type-scale(1);
+    margin-top: type-scale(3);
   }
 }

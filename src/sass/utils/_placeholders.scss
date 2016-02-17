@@ -12,11 +12,22 @@
 }
 
 %home-section-padding {
-  padding: type-scale(2) $base-line-height type-scale(3);
+  padding: type-scale(3) $base-line-height type-scale(4);
 }
 
 %home-section-paragraphs {
   font-family: $secondary;
   font-size: type-scale(1);
   line-height: $base-line-height * 1.5;
+}
+
+%hide-visually {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px !important;
 }

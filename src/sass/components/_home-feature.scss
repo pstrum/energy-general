@@ -1,0 +1,53 @@
+$blog-icon: url('/images/blog-t.svg');
+$clock-icon: url('/images/clock.svg');
+
+@mixin feature-icons($icon, $size) {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+  background-image: $icon;
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+
+.home-feature.blog {
+  background-image: url('/images/blog-earth.jpg');
+  a {
+    @include button-links($border-color: transparent, $background-color: color(tertiary));
+    display: inline-block;
+  }
+  h2:before {
+    @include feature-icons($blog-icon, contain);
+  }
+}
+
+.home-feature.history {
+  background-image: url('/images/white-house.jpg');
+  a {
+    @include button-links($font-color: color(primary), $background-color: color(base));
+    display: inline-block;
+  }
+  h2:before {
+    @include feature-icons($clock-icon, 76%);
+    position: relative;
+    bottom: -5px;
+  }
+}
+
+.home-feature {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  h2 {
+    font-size: type-scale(0);
+    font-weight: weight(regular);
+    text-transform: uppercase;
+    color: color(tertiary, alt);
+  }
+  p {
+    @extend %home-section-paragraphs;
+    color: color(base);
+  }
+}

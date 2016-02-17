@@ -1,7 +1,8 @@
 footer {
-  @extend %home-section-padding;
+  text-align: center;
+  padding: line-height(1) $base-line-height;
   ul {
-    text-align: center;
+    margin-bottom: $base-line-height;
     li {
       display: inline-block;
     }
