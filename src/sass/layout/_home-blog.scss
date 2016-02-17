@@ -1,0 +1,13 @@
+.home-blog {
+  @extend %home-section-padding;
+  text-align: center;
+  h2 {
+    text-align: left;
+  }
+  p {
+    margin-top: type-scale(1);
+  }
+  a {
+    margin-top: type-scale(1);
+  }
+}
