@@ -1,3 +1,17 @@
-.top-icon {
-  color: color(primary);
+.top-icon.facebook-icon {
+  @include button-icon-top($icon: url('/images/facebook.svg'), $color: color(primary)); 
+}
+
+.top-icon.twitter-icon {
+  @include button-icon-top($icon: url('/images/twitter.svg'), $color: color(primary));
+}
+
+footer {
+  li {
+    margin-left: $base-line-height;
+    background-color: color(base, dark);
+    &:first-child {
+      margin: 0;
+    }
+  }
 }

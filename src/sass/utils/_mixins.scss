@@ -1,3 +1,27 @@
+@mixin button-icon-top($icon, $color, $weight: weight(regular)) {
+  display: block;
+  padding: $base-line-height;
+  text-align: center;
+  font-weight: $weight;
+  color: $color;
+  border: 1px solid transparent;
+  transition: 0.14s all ease-in;
+  &:before {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin-bottom: $base-line-height / 5;
+    background-image: $icon;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &:hover {
+    border: 1px solid $color;
+  }
+}
+
 @mixin vertical-rhythm($ratio: 0) {
   font-size: type-scale($ratio);
   line-height: line-height($ratio);

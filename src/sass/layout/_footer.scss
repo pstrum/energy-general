@@ -1,0 +1,9 @@
+footer {
+  @extend %home-section-padding;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+    }
+  }
+}
