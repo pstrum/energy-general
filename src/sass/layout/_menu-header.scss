@@ -22,9 +22,7 @@
     }
   }
   .menu-icon {
-    display: inline-block;
-    height: type-scale(0);
-    width: type-scale(0);
+    @extend %arrow-icon;
   }
   .menu-slide {
     display: flex;

@@ -1,3 +1,9 @@
+@mixin arrow-icon($color) {
+  color: $color;
+  transform: translateY(-1px) scale(1);
+  transition: .3s color;
+}
+
 @mixin button-icon-top($icon, $color, $weight: weight(regular)) {
   display: block;
   padding: $base-line-height;

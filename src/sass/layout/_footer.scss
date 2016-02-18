@@ -7,4 +7,56 @@ footer {
       display: inline-block;
     }
   }
+  button {
+    min-height: $base-line-height;
+    margin-top: $base-line-height * 2;
+  }
+  .scroll-top {
+    display: inline-block;
+    height: $base-line-height;
+    width: 8px;
+    &.to-top {
+      .arrow-icon-left {
+        opacity: 0;
+        transform: scale(.7) translate(8px) rotate(-90deg);
+        animation: 1s spin;
+      }
+      .arrow-icon-right {
+        opacity: 0;
+        transform: scale(.7) translate(8px) rotate(90deg);
+      animation: 1s reverse-spin;}
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(0) rotateZ(0);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(.8) translate(-3px) rotateZ(-450deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(.7) translate(8px) rotateZ(-450deg);
+  }
+}
+
+@keyframes reverse-spin {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(12px) rotateZ(0);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(.8) translate(18px) rotateZ(450deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.7) translate(8px) rotateZ(450deg);
+  }
 }

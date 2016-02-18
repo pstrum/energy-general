@@ -8,6 +8,14 @@ input {
   font-size: type-scale(0);
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
 a {
   color: color(base);
   font-weight: weight(light);
