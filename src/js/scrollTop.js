@@ -1,9 +1,9 @@
 (function() {
   $("footer button").click(function() {
     $(this).find(".scroll-top").addClass("to-top");
-    $("html, body").delay(1000).animate( {
+    $("html, body").delay(500).animate( {
       scrollTop: 0
-    }, 1000, function() {
+    }, 500, function() {
       $(".scroll-top").removeClass("to-top");
     });
   });
