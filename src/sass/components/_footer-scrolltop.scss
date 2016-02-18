@@ -9,14 +9,14 @@ footer {
   @include arrow-icon(color(primary));
   .arrow-icon-left {
     @extend %menu-icons;
-    left: -12px; 
+    left: -12px;
     right: 0;
     bottom: 8px;
-    transform: rotate(-45deg);
+    transform: translate(0) rotate(-45deg);
   }
   .arrow-icon-right {
     @extend %menu-icons;
-    left: -12px; 
+    left: -12px;
     right: 0;
     bottom: 8px;
     transform: translate(12px, 0px) rotate(45deg);

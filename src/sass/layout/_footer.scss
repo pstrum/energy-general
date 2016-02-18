@@ -18,45 +18,65 @@ footer {
     &.to-top {
       .arrow-icon-left {
         opacity: 0;
-        transform: scale(.7) translate(8px) rotate(-90deg);
-        animation: 1s spin;
+        transform: scale(.8) translate(0, 8px) rotateZ(-45deg);
+        animation: .4s spin;
       }
       .arrow-icon-right {
         opacity: 0;
-        transform: scale(.7) translate(8px) rotate(90deg);
-      animation: 1s reverse-spin;}
+        transform: scale(.8) translate(14px, 8px) rotateZ(45deg);
+        animation: .4s reverse-spin;
+      }
+      & + p {
+        opacity: 0;
+        transform: translate(0, 8px);
+        animation: .4s drop;
+      }
     }
   }
 }
+
 
 @keyframes spin {
   0% {
     opacity: 1;
     transform: scale(1) translate(0) rotateZ(0);
   }
-
-  85% {
+  75% {
     opacity: 1;
-    transform: scale(.8) translate(-3px) rotateZ(-450deg);
+    transform: scale(.8) translate(0) rotateZ(-405deg);
   }
-
   100% {
     opacity: 0;
-    transform: scale(.7) translate(8px) rotateZ(-450deg);
+    transform: scale(.8) translate(0, 8px) rotateZ(-405deg);
   }
 }
 
 @keyframes reverse-spin {
   0% {
     opacity: 1;
-    transform: scale(1) translate(12px) rotateZ(0);
+    transform: scale(1) translate(12px, 0px) rotateZ(0);
   }
-  85% {
+  75% {
     opacity: 1;
-    transform: scale(.8) translate(18px) rotateZ(450deg);
+    transform: scale(.8) translate(14px, 0px) rotateZ(405deg);
   }
   100% {
     opacity: 0;
-    transform: scale(.7) translate(8px) rotateZ(450deg);
+    transform: scale(.8) translate(14px, 8px) rotateZ(405deg);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.8) translate(0, 8px);
   }
 }
