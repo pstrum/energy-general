@@ -1,11 +1,6 @@
 .menu button {
   padding: 24px 15px 18px;
-  border: none;
   background: none;
-  cursor: pointer;
-  &:focus {
-    outline: 0;
-  }
   &:hover {
     .menu-icon-top, .menu-icon-bottom {
       background-color: color(accent);

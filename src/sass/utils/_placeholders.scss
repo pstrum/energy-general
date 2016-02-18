@@ -1,9 +1,12 @@
+%arrow-icon {
+  display: inline-block;
+  height: type-scale(0);
+  width: type-scale(0);
+}
+
 %menu-icons {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
   height: 4px;
   background-color: color(primary);
   border-radius: 2px;
