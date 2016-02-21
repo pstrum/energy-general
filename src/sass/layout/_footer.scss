@@ -10,6 +10,9 @@ footer {
   button {
     min-height: $base-line-height;
     margin-top: $base-line-height * 2;
+    span:last-child {
+      display: block;
+    }
   }
   .scroll-top {
     display: inline-block;
@@ -18,18 +21,18 @@ footer {
     &.to-top {
       .arrow-icon-left {
         opacity: 0;
-        transform: scale(.8) translate(0, 8px) rotateZ(-45deg);
-        animation: .4s spin;
+        transform: scale(.8) translate(2px, 10px) rotateZ(-45deg);
+        animation: .5s spin;
       }
       .arrow-icon-right {
         opacity: 0;
-        transform: scale(.8) translate(14px, 8px) rotateZ(45deg);
-        animation: .4s reverse-spin;
+        transform: scale(.8) translate(14px, 10px) rotateZ(45deg);
+        animation: .5s reverse-spin;
       }
       & + p {
         opacity: 0;
-        transform: translate(0, 8px);
-        animation: .4s drop;
+        transform: translate(0, 10px);
+        animation: .5s drop;
       }
     }
   }
@@ -37,22 +40,22 @@ footer {
 
 
 @keyframes spin {
-  0% {
+  from {
     opacity: 1;
     transform: scale(1) translate(0) rotateZ(0);
   }
   75% {
     opacity: 1;
-    transform: scale(.8) translate(0) rotateZ(-405deg);
+    transform: scale(.8) translate(2px) rotateZ(-405deg);
   }
-  100% {
+  to {
     opacity: 0;
-    transform: scale(.8) translate(0, 8px) rotateZ(-405deg);
+    transform: scale(.8) translate(14px, 8px) rotateZ(-405deg);
   }
 }
 
 @keyframes reverse-spin {
-  0% {
+  from {
     opacity: 1;
     transform: scale(1) translate(12px, 0px) rotateZ(0);
   }
@@ -60,14 +63,14 @@ footer {
     opacity: 1;
     transform: scale(.8) translate(14px, 0px) rotateZ(405deg);
   }
-  100% {
+  to {
     opacity: 0;
     transform: scale(.8) translate(14px, 8px) rotateZ(405deg);
   }
 }
 
 @keyframes drop {
-  0% {
+  from {
     opacity: 1;
     transform: scale(1) translate(0);
   }
@@ -75,7 +78,7 @@ footer {
     opacity: 1;
     transform: scale(1) translate(0);
   }
-  100% {
+  to {
     opacity: 0;
     transform: scale(.8) translate(0, 8px);
   }
