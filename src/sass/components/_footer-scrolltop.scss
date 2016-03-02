@@ -7,6 +7,7 @@ footer {
 }
 .scroll-top {
   @include arrow-icon(color(primary));
+  display: block;
   .arrow-icon-left {
     @extend %menu-icons;
     left: -12px;
