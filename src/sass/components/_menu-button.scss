@@ -1,9 +1,4 @@
 .menu button {
   padding: 24px 15px 18px;
   background: none;
-  &:hover {
-    .menu-icon-top, .menu-icon-bottom {
-      background-color: color(accent);
-    }
-  }
 }
