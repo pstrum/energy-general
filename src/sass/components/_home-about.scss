@@ -2,7 +2,8 @@
   color: color(base);
   background-color: color(secondary);
   h2 {
-    font-weight: weight(regular);
+    font-family: $primary;
+    font-weight: weight(bold);
     font-size: type-scale(0);
     text-transform: uppercase;
   }
