@@ -3,13 +3,14 @@
   h1 {
     padding: 18px 15px;
     text-align: left;
+    font-family: $tertiary;
     font-size: type-scale(-1);
     font-weight: weight(bold);
+    font-style: italic;
     color: color(accent);
     line-height: 1;
     &:first-line {
       font-size: 14px;
-      font-weight: weight(heavy);
     }
   }
 }

@@ -15,7 +15,8 @@
     }
   }
   h2 {
-    font-weight: weight(semibold);
+    font-family: $primary;
+    font-weight: weight(bold);
     font-size: type-scale(0);
     text-transform: uppercase;
   }

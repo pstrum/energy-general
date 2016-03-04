@@ -13,11 +13,11 @@ $theme-colors: (
     base: #0054ff
   ),
   secondary: (
-    base: #49A078
+    base: #0ED371
   ),
   tertiary: (
     base: #D6314F,
-    alt: #F1C40F
+    alt: #F8FC0A
   ),
   base: (
     base: #F8F8F8,
@@ -47,7 +47,8 @@ $line-height: (
 );
 
 $primary: 'Lato', sans-serif;
-$secondary: 'Josefin Slab', serif;
+$secondary: 'Exo', sans-serif;
+$tertiary: 'Merriweather Sans', sans-serif;
 
 $weight: (
   lighter: 100,
@@ -55,5 +56,6 @@ $weight: (
   regular: 400,
   semibold: 600,
   bold: 700,
+  Extrabold: 800,
   heavy: 900
 );
