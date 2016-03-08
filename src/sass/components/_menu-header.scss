@@ -8,10 +8,12 @@
     font-weight: 500;
     font-style: italic;
     color: color(accent);
+    letter-spacing: 1.5px;
     line-height: 1;
     &:first-line {
       font-size: 14px;
       font-weight: weight(bold);
+      letter-spacing: 1.6px;
     }
   }
 }
