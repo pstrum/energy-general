@@ -6,5 +6,19 @@
     font-size: type-scale(1);
     line-height: line-height(1);
     color: color(primary);
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      bottom: 10%;
+      height: 0;
+      width: 90%;
+      border-bottom: 2px solid color(primary);
+      transform: translateZ(0) scaleX(0);
+      transition: 0.14s all cubic-bezier(0.5, -0.1, 0.25, 1.3);
+    }
+    &:hover:after {
+      transform: translateZ(0) scaleX(1);
+    }
   }
 }
