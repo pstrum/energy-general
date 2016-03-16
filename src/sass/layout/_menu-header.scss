@@ -7,6 +7,7 @@
     display: inline-block;
     position: absolute;
     right: 0;
+    padding: 18px 15px;
   }
   button {
     position: absolute;
@@ -30,7 +31,7 @@
     align-items: center;
     justify-content: space-between;
     // position: absolute;
-    position: fixed;
+    position: absolute;
     // top: 0;
     top: line-height(4);
     bottom: 0;
@@ -51,7 +52,7 @@
   .menu-slide.menu-open {
     visibility: visible;
     // transform: translateX(-5px);
-    transform: translateX(0);
+    transform: translateX(0) !important;
     ul {
       opacity: 1;
     }
@@ -66,38 +67,105 @@
   }
 }
 
-@media screen and (min-width: break(second)) {
+@media screen and (min-width: break(first)) {
   .menu {
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 260px;
+    width: 70px;
     top: 0;
     bottom: 0;
     left: 0;
     text-align: center;
     border-right: 1px solid color(primary);
-    button {
-      display: none;
-    } 
-    h1 {
-      order: 3;
+    z-index: 3;
+    &:before {
+      content: "";
       position: absolute;
-      bottom: $base-line-height;
+      top: 0;
+      bottom: 0;
       left: 0;
+      right: 0;
+      background-color: color(base);
+      z-index: -1;
+    }
+    h1 {
+      order: 2;
+      position: relative;
+      padding: 2px;
     }
     .menu-slide {
-      order: 2;
-      visibility: visible;
-      position: static;
-      transform: none;
-      background: none;
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      width: auto;
+      z-index: -2;
+    }
+    .menu-nav {
+      margin-top: $base-line-height * 4;
+    }
+    .menu-slide.menu-open {
+      left: 70px;
+      border-right: 1px solid color(primary);
+    }
+    button {
+      position: relative;
+      order: 4;
+      margin-top: $base-line-height * 2;
     }
     .menu-logo {
       order: 1;
-      margin: $base-line-height * 2 0;
+      padding-bottom: 0;
+      margin: 5px 0 0;
+    }
+  }
+  .menu-open {
+    .menu {
+      border-right-color: color(base);
+    }
+  }
+}
+
+@media screen and (min-width: break(second)) {
+  .menu {
+    width: 260px;
+    justify-content: flex-start;
+    h1 {
+      order: 4;
+      position: absolute;
+      left: 0;
+      bottom: $base-line-height;
+    }
+    button {
+      order: 2;
+      display: none;
+    } 
+    .menu-logo {
+      margin: $base-line-height * 2 0 $base-line-height * 3;
+    }
+    .menu-slide {
+      visibility: visible;
+      position: static;
+      left: 0;
+      height: auto;
+      transform: none;
+      background: none;
+      transition: none;
+      z-index: 0;
+    }
+    .menu-slide.menu-open {
+      border-right: none;
+    }
+    .menu-nav {
+      margin-top: $base-line-height;
+    }
+  }
+  .menu-open {
+    .menu {
+      border-right-color: color(primary);
     }
   }
 }

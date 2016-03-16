@@ -4,10 +4,16 @@ body.menu-open {
   width: 100%;
 }
 
-@media screen and (min-width: break(second)) {
+@media screen and (min-width: break(first)) {
   body {
     display: flex;
     flex-direction: column;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: break(second)) {
+  body {
     padding-left: 260px;
   }
 }
