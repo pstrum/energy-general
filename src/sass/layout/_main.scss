@@ -1,0 +1,27 @@
+main:before {
+  display: none;
+  opacity: 0;
+}
+
+
+body.menu-open {
+  @media screen and (min-width: break(first)) {
+    main:before {
+      content: "";
+      display: block;
+      position: fixed;
+      background: rgba(255,255,255,.5);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  @media screen and (min-width: break(second)) {
+    main:before {
+      display: none;
+    }
+  }
+}
