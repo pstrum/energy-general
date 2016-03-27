@@ -8,6 +8,10 @@
   h2 {
     font-size: type-scale(1);
     font-weight: weight(semibold);
+    color: white;
+    @media screen and (min-width: break(first)) {
+      font-size: type-scale(3);
+    }
   }
   strong {
     font-weight: weight(heavy);
