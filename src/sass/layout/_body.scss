@@ -1,14 +1,22 @@
 body.menu-open {
-  position: fixed;
   height: 100%;
   width: 100%;
+  @media screen and (min-width: break(first)) {
+    height: auto;
+  }
+}
+
+body.fixed {
+  position: fixed;
 }
 
 @media screen and (min-width: break(first)) {
   body {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-left: 70px;
+    min-height: 100vh;
   }
 }
 

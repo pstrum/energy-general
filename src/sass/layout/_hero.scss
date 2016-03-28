@@ -1,7 +1,19 @@
 .home-hero {
   text-align: center;
+  @media screen and (min-width: break(first)) {
+    min-height: 400px;
+    flex-grow: 1;
+  }
+  h2 {
+    @media screen and (min-width: break(first)) {
+      margin-top: 10%;
+    }
+  }
   p {
     margin-top: $base-line-height;
+    @media screen and (min-width: break(first)) {
+      margin: $base-line-height * 2;
+    }
   }
   form {
     margin-top: $base-line-height;

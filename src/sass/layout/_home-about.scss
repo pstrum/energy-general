@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @media screen and (min-width: break(first)) {
+    flex-grow: 1;
+  }
   svg {
     order: 1;
     width: 48px;

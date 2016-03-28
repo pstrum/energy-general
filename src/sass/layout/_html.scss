@@ -1,0 +1,6 @@
+html.body-menu {
+  @media screen and (min-width: break(first)) {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
